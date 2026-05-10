@@ -1,15 +1,14 @@
-{%- if settings.svg.html is defined and settings.svg.html is not empty -%}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><meta charset="UTF-8"></head><body><p>{%- if settings.svg.html is defined and settings.svg.html is not empty -%}
     {%- set classes = settings.classes | merge([base_styles.base]) | join(' ') -%}
     {%- set id_attribute = settings._cssid is not empty ? 'id="' ~ settings._cssid | e('html_attr') ~ '"' : '' -%}
     {%- if settings.link is defined  and settings.link.attributes is not empty -%}
-        <{{ settings.link.tag | e('html_tag') }} {{ settings.link.attributes | raw }} class="{{ classes }}" data-interaction-id="{{ interaction_id }}"
+        &lt;{{ settings.link.tag | e('html_tag') }} {{ settings.link.attributes | raw }} class="{{ classes }}" data-interaction-id="{{ interaction_id }}"
             {%- if id_attribute is not empty %} {{ id_attribute }}{% endif -%}
             {%- if settings.attributes is defined and settings.attributes is not empty %} {{ settings.attributes | raw }}{% endif -%}
-        >{{ settings.svg.html | raw }}</{{ settings.link.tag | e('html_tag') }}>
+        &gt;{{ settings.svg.html | raw }}{{ settings.link.tag | e('html_tag') }}&gt;
     {%- else -%}
-        <div class="{{ classes }}" data-interaction-id="{{ interaction_id }}"
-            {%- if id_attribute is not empty %} {{ id_attribute }}{% endif -%}
-            {%- if settings.attributes is defined and settings.attributes is not empty %} {{ settings.attributes | raw }}{% endif -%}
-        >{{ settings.svg.html | raw }}</div>
+        </p><div class="{{ classes }}" data-interaction-id="{{ interaction_id }}" if id_attribute is not empty endif settings.attributes defined and raw>{{ settings.svg.html | raw }}</div>
     {%- endif -%}
 {%- endif -%}
+</body></html>

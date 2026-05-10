@@ -1,15 +1,17 @@
-{% if settings.paragraph is not empty %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><meta charset="UTF-8"></head><body><p>{% if settings.paragraph is not empty %}
 	{% set id_attribute = settings._cssid is not empty ? 'id=' ~ settings._cssid | e('html_attr') : '' %}
-		<{{ settings.tag | e('html_tag') }} class="{{ settings.classes | merge( [ base_styles.base ] ) | join(' ') }}" data-interaction-id="{{ interaction_id }}" {{ id_attribute }} {{ settings.attributes | raw }}>
+		&lt;{{ settings.tag | e('html_tag') }} class="{{ settings.classes | merge( [ base_styles.base ] ) | join(' ') }}" data-interaction-id="{{ interaction_id }}" {{ id_attribute }} {{ settings.attributes | raw }}&gt;
 			{% if settings.link and settings.link.attributes is not empty %}
-				<{{ settings.link.tag | e('html_tag') }}
+				&lt;{{ settings.link.tag | e('html_tag') }}
 					{{ settings.link.attributes | raw }}
 					class="{{ base_styles['link-base'] }}"
-				>
+				&gt;
 						{{ settings.paragraph | striptags(allowed_tags) | raw }}
-				</{{ settings.link.tag | e('html_tag') }}>
+				{{ settings.link.tag | e('html_tag') }}&gt;
 			{% else %}
-					{{ settings.paragraph | striptags('<b><strong><sup><sub><s><em><u><ul><ol><li><blockquote><a><del><span><br>') | raw }}
+					{{ settings.paragraph | striptags('<b><strong><sup><sub><s><em><u><ul></ul><ol><li><blockquote><a><del><span><br>') | raw }}
 			{% endif %}
-		</{{ settings.tag | e('html_tag') }}>
+		{{ settings.tag | e('html_tag') }}&gt;
 {% endif %}
+</span></del></a></blockquote></li></ol></u></em></s></sub></sup></strong></b></p></body></html>
