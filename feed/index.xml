@@ -8,51 +8,33 @@
 	>
 
 <channel>
-	<title>Tran Duc Tan Portfolio</title>
-	<atom:link href="https://alcesthe.github.io/my-portfolio/feed/" rel="self" type="application/rss+xml" />
-	<link>https://alcesthe.github.io/my-portfolio</link>
+	<title>Ton Portfolio</title>
+	<atom:link href="http://alcesthe.github.io/my-portfolio/feed/" rel="self" type="application/rss+xml" />
+	<link>http://alcesthe.github.io/my-portfolio/</link>
 	<description></description>
-	<lastBuildDate>Wed, 21 Sep 2022 20:56:29 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 09 May 2026 07:32:32 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.9.4</generator>
 	<item>
-		<title>Front Page</title>
-		<link>https://alcesthe.github.io/my-portfolio/2022/09/21/front-page/</link>
-					<comments>https://alcesthe.github.io/my-portfolio/2022/09/21/front-page/#respond</comments>
-		
-		<dc:creator><![CDATA[root]]></dc:creator>
-		<pubDate>Wed, 21 Sep 2022 20:55:43 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://alcesthe.github.io/my-portfolio/?p=16</guid>
-
-					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[]]></content:encoded>
-					
-					<wfw:commentRss>https://alcesthe.github.io/my-portfolio/2022/09/21/front-page/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
 		<title>Hello world!</title>
-		<link>https://alcesthe.github.io/my-portfolio/2022/09/21/hello-world/</link>
-					<comments>https://alcesthe.github.io/my-portfolio/2022/09/21/hello-world/#comments</comments>
+		<link>http://alcesthe.github.io/my-portfolio/hello-world/</link>
+					<comments>http://alcesthe.github.io/my-portfolio/hello-world/#comments</comments>
 		
-		<dc:creator><![CDATA[root]]></dc:creator>
-		<pubDate>Wed, 21 Sep 2022 20:32:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sat, 09 May 2026 07:32:32 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://alcesthe.github.io/my-portfolio/?p=1</guid>
+		<guid isPermaLink="false">http://alcesthe.github.io/my-portfolio/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://alcesthe.github.io/my-portfolio/2022/09/21/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>http://alcesthe.github.io/my-portfolio/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		

@@ -7,9 +7,9 @@
 	>
 <channel>
 	<title>
-	Comments for Ton Portfolio	</title>
-	<atom:link href="http://alcesthe.github.io/my-portfolio/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>http://alcesthe.github.io/my-portfolio/</link>
+	Comments on: Hello world!	</title>
+	<atom:link href="http://alcesthe.github.io/my-portfolio/hello-world/feed/" rel="self" type="application/rss+xml" />
+	<link>http://alcesthe.github.io/my-portfolio/hello-world/</link>
 	<description></description>
 	<lastBuildDate>Sat, 09 May 2026 07:32:32 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -19,7 +19,7 @@
 	<generator>https://wordpress.org/?v=6.9.4</generator>
 	<item>
 		<title>
-		Comment on Hello world! by A WordPress Commenter		</title>
+		By: A WordPress Commenter		</title>
 		<link>http://alcesthe.github.io/my-portfolio/hello-world/#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
